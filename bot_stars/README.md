@@ -6,8 +6,8 @@
 
 1. **Клонируйте репозиторий:**
    ```bash
-   git clone <URL_репозитория>
-   cd <имя_папки_репозитория>
+   git clone https://github.com/Fedor-777/alkury_projects.git
+   cd alkury_projects
    ```
 2. **Создайте виртуальное окружение (рекомендуется):**
 ```bash
