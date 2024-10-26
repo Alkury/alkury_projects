@@ -12,5 +12,5 @@
 3. Пример метода Гауса на матрице 4x4:<br> ![4x4](pic/determ.png)
 
 ## Мои операции:
-1. [matrix_determinant]() - нахождение определителя только до матриц 3х3 включительно 
-2. [matrix_multiplication]() - умножение матриц верного формата из теории
+1. [matrix_determinant](https://github.com/Fedor-777/alkury_projects/blob/main/matrices/matrix_determinant.py) - нахождение определителя только до матриц 3х3 включительно 
+2. [matrix_multiplication](https://github.com/Fedor-777/alkury_projects/blob/main/matrices/matrix_multiplication.py) - умножение матриц верного формата из теории
