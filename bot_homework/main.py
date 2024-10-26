@@ -9,7 +9,6 @@ from telebot import types
 bot_token = '8144493435:AAFJ5S9a5gqsIY_ms8bWzTuwTUC0utuApco'  # Вставь свой токен
 bot = telebot.TeleBot(bot_token)
 
-
 conn = sqlite3.connect('dz.db', check_same_thread=False)
 cursor = conn.cursor()
 cursor.execute('''CREATE TABLE IF NOT EXISTS homework (
