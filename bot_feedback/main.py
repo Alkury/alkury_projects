@@ -49,6 +49,7 @@ async def answer(message: Message):
                                    text=f"Неверный формат ответа, введите: \n<code>/ban ~id_user~</code>",
                                    parse_mode="HTML")
 
+
 # тг @alkury
 @dp.message(F.text)
 async def send_message(message: Message):
