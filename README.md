@@ -29,3 +29,5 @@
 Telegram: [@alkury](https://t.me/alkury)<br>
 
 **Спасибо за внимание! Надеюсь, эти проекты будут вам полезны! 🚀**
+
+![GitHub stars](https://img.shields.io/github/stars/Fedor-777/alkury_projects?style=social) [![Мой тг](https://img.shields.io/badge/Join%20us%20on%20Telegram-0088cc?style=flat&logo=telegram&logoColor=white)](https://t.me/alkury)
