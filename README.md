@@ -8,6 +8,7 @@
 2. **[bot_homework](https://github.com/Fedor-777/alkury_projects/tree/main/bot_homework)** - Бот для отслеживания и учёта домашнего задания/задач в Telegram.
 3. **[matrices](https://github.com/Fedor-777/alkury_projects/tree/main/matrices)** - Наброски операций над матрицами.
 4. **[bot_feedback](https://github.com/Fedor-777/alkury_projects/tree/main/bot_feedback)** - Бот с обратной связью бля людей, у которых сб в тг.
+5. **[bot_price_tokens](https://github.com/Fedor-777/alkury_projects/tree/main/bot_privce_tokens)** - Бот, который постит в канал актуальный курс выбранного токена
 
 ## 📌 Как начать
 
