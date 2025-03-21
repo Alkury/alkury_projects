@@ -17,13 +17,12 @@ async def send_message(message):
     text_after_start = message.text.split(" ")
     if len(text_after_start) >= 5:
         await message.answer("Бот запущен.")
-        print(text_after_start, text_after_start[2])
         network = "ton"  # сеть в которой токен наш находится пример: ton, eth, sol
         network_ton = "eth"  # не трогать это для курса тона в баксах
-        adress_token = text_after_start[1]  # c сайта https://www.geckoterminal.com/ru
-        adres_ton = "0x582d872a1b094fc48f5de31d3b73f2d9be47def1"  # этот адрес с того же сайта, но тут чисто как прайс в другой сети
-        url_token = f"https://api.geckoterminal.com/api/v2/networks/{network}/tokens/multi/{adress_token}"
-        url_ton = f"https://api.geckoterminal.com/api/v2/networks/{network_ton}/tokens/multi/{adres_ton}"
+        address_token = text_after_start[1]  # c сайта https://www.geckoterminal.com/ru
+        address_ton = "0x582d872a1b094fc48f5de31d3b73f2d9be47def1"  # этот адрес с того же сайта, но тут чисто как прайс в другой сети
+        url_token = f"https://api.geckoterminal.com/api/v2/networks/{network}/tokens/multi/{address_token}"
+        url_ton = f"https://api.geckoterminal.com/api/v2/networks/{network_ton}/tokens/multi/{address_ton}"
         url_swap = text_after_start[3]  # ссылка под сообщением
         nuls_after_point = int(text_after_start[2])  # тут колво знаком после точки для m5 это 4, типа: 1.0303
         #                                                                                                |    | <--- 4 знака
@@ -35,8 +34,8 @@ async def send_message(message):
             )
             keyboard = InlineKeyboardMarkup(inline_keyboard=[[button]])
 
-            response_m5 = requests.get(url_token)
-            price_token = round(float(response_m5.json()["data"][0]['attributes']['price_usd']), nuls_after_point)
+            response_token = requests.get(url_token)
+            price_token = round(float(response_token.json()["data"][0]['attributes']['price_usd']), nuls_after_point)
             await asyncio.sleep(15)
             response_ton = requests.get(url_ton)
             price_ton = round(float(response_ton.json()["data"][0]['attributes']['price_usd']), nuls_after_point)
@@ -54,12 +53,12 @@ async def send_message(message):
             await asyncio.sleep(20)
     else:
         await message.answer(
-            "Неверный формат ввода, посмотрите на формулу:\n\n <code>/start adress_token nuls_after_point link_in_button text_in_button</code>",
+            "Неверный формат ввода, посмотрите на формулу:\n\n <code>/start address_token nuls_after_point link_in_button text_in_button</code>",
             parse_mode="HTML")
 
 
 # Пример :)
-# /start adress_token nuls_after_point link_in_button text_in_button
+# /start address_token nuls_after_point link_in_button text_in_button
 # /start EQBa6Oofc4vQZ1XZLTYRkbX4qWUWBCf0sFBgo0kdxdlw6rqN 4 https://swap.coffee/dex?ft=TON&st=M5 Buy M5
 @dp.message(Command('start'))
 async def start_handler(message: types.Message):
