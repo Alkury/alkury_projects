@@ -1,0 +1,4 @@
+pyrogram
+aiogram>=3.0
+aiofiles
+pydantic-settings
