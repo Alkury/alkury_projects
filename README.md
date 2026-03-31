@@ -4,12 +4,13 @@
 
 ## 📚 Навигация
 
-1. **[bot_stars](https://github.com/Fedor-777/alkury_projects/tree/main/bot_stars)** - Бот для доната звёзд в Telegram.
-2. **[bot_homework](https://github.com/Fedor-777/alkury_projects/tree/main/bot_homework)** - Бот для отслеживания и учёта домашнего задания/задач в Telegram.
-3. **[matrices](https://github.com/Fedor-777/alkury_projects/tree/main/matrices)** - Наброски операций над матрицами.
-4. **[bot_feedback](https://github.com/Fedor-777/alkury_projects/tree/main/bot_feedback)** - Бот с обратной связью бля людей, у которых сб в тг.
-5. **[bot_price_tokens](https://github.com/Fedor-777/alkury_projects/tree/main/bot_privce_tokens)** - Бот, который постит в канал актуальный курс выбранного токена
-6. **[sender_gifts](https://github.com/Alkury/alkury_projects/tree/main/sender_gifts)** - Юзербот + бот работают в связке чтобы отправлять подарки телеграм доступные по апи 
+1. **[bot_stars](https://github.com/Fedor-777/alkury_projects/tree/main/bot_stars)** — бот для доната звёзд в Telegram.
+2. **[bot_homework](https://github.com/Fedor-777/alkury_projects/tree/main/bot_homework)** — бот для отслеживания и учёта домашнего задания и задач в Telegram.
+3. **[matrices](https://github.com/Fedor-777/alkury_projects/tree/main/matrices)** — наброски операций над матрицами (умножение, определитель).
+4. **[bot_feedback](https://github.com/Fedor-777/alkury_projects/tree/main/bot_feedback)** — бот обратной связи для людей, у которых сб в Telegram.
+5. **[bot_privce_tokens](https://github.com/Fedor-777/alkury_projects/tree/main/bot_privce_tokens)** — бот, который постит в канал актуальный курс выбранного токена (TON / GeckoTerminal).
+6. **[sender_gifts](https://github.com/Alkury/alkury_projects/tree/main/sender_gifts)** — связка юзербота (Pyrogram) и бота (Aiogram) для отправки подарков, доступных по API Telegram.
+7. **[bot_custom_emoji](https://github.com/Fedor-777/alkury_projects/tree/main/bot_custom_emoji)** — бот для просмотра идентификаторов кастомных эмоджи (`custom_emoji_id`) в сообщениях Telegram.
 
 ## 📌 Как начать
 
@@ -21,7 +22,7 @@
    ```bash
    cd alkury_projects
    ```
-3. Установите необходимые зависимости(для каждого проекта отдельно):
+3. Установите необходимые зависимости (для каждого проекта отдельно, из соответствующей папки):
    ```bash
    pip install -r requirements.txt
    ```
